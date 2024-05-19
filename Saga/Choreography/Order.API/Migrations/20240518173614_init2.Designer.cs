@@ -12,7 +12,7 @@ using Order.API.Models;
 namespace Order.API.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20240518140939_init2")]
+    [Migration("20240518173614_init2")]
     partial class init2
     {
         /// <inheritdoc />
@@ -41,7 +41,6 @@ namespace Order.API.Migrations
                         .HasColumnType("datetime2");
 
                     b.Property<string>("FailMessage")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<int>("Status")

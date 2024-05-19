@@ -38,7 +38,6 @@ namespace Order.API.Migrations
                         .HasColumnType("datetime2");
 
                     b.Property<string>("FailMessage")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<int>("Status")
